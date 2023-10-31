@@ -5,7 +5,6 @@ import Feed from "./components/Feed";
 import SearchResults from "./components/SearchResults";
 import VideoDetails from "./components/VideoDetails";
 
-
 function App() {
   return (
     <AppContext>
@@ -13,10 +12,10 @@ function App() {
         <div className="flex flex-col h-full">
           <Header />
           <Routes>
-            <Route path="/" exact element={<Feed/>} />
+            <Route path="/" exact element={<Feed />} />
             <Route
               path="/searchResult/:searchQuery"
-              element={<SearchResults/>}
+              element={<SearchResults />}
             />
             <Route path="/video/:id" element={<VideoDetails />} />
           </Routes>
