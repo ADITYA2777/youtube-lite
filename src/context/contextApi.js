@@ -8,7 +8,7 @@ export const AppContext = (props) => {
   const [loading, setloading] = useState(false);
   const [searchResults, setsearchResults] = useState(false);
   const [selectCatgerious, setselectCatgerious] = useState(false);
-  const [moblieMenu, setmoblieMenu] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(false);
 
   useEffect(() => {
     fetchSelectedCategroyData(selectCatgerious);
@@ -29,11 +29,10 @@ export const AppContext = (props) => {
         loading,
         setloading,
         searchResults,
-        // setsearchResults,
         selectCatgerious,
         setselectCatgerious,
-        moblieMenu,
-        setmoblieMenu,
+        mobileMenu,
+        setMobileMenu,
       }}
     >
       {props.children}

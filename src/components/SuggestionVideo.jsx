@@ -10,7 +10,7 @@ const SuggestionVideo = ({video}) => {
    <Link to={`/video/${video.videoId}`}>
      <div className="flex ">
        <div
-         className="relative h-24 lg:h-20  xl:h-24 w-40 min-w-[168px]
+         className="relative h-24 lg:h-20  xl:h-24 w-40 min-w-[168px] mb-3
         lg:w-32 lg:min-w-[128px]  xl:w-40 xl:min-w-[168px] rounded-xl bg-slate-800 overflow-hidden"
        >
          <img
