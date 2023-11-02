@@ -8,7 +8,7 @@ export const AppContext = (props) => {
   const [loading, setloading] = useState(false);
   const [searchResults, setsearchResults] = useState(false);
   const [selectCatgerious, setselectCatgerious] = useState(false);
-  const [mobileMenu, setMobileMenu] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(true);
 
   useEffect(() => {
     fetchSelectedCategroyData(selectCatgerious);
